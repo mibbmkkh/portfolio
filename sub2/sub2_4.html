@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품소개-제품검색</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content4.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/cfe3cae143.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <? include "../common/subhead.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/header.jpg" alt="">
+            <span>제품소개</span>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub2_1.html">샘베딩</a></li>
+                <li><a href="./sub2_2.html">도노</a></li>
+                <li><a href="./sub2_3.html">포에트</a></li>
+                <li><a href="./sub2_4.html" class="current">제품검색</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    home&gt;제품소개&gt;<strong>제품검색</strong>
+                </div>
+                <div class="tit_move">
+                    <h2>제품검색</h2>
+                    <p>한샘의 다양한 제품들을 쉽고 빠르게 찾아보세요.</p>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="furniture_search">
+                    <h2>가구검색</h2>
+                    <div class="search_box">
+                        <label for="title2" class="hidden">가구 입력</label>
+                        <input id="title2" type="text" placeholder="가구명">
+                        <button id="btn2" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="btn_all" type="button"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                    <dl>
+                        <dt>추천 검색어</dt>
+                        <dd>
+                            <a href="#">#옷장</a>
+                            <a href="#">#식탁</a>
+                            <a href="#">#침대</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="furniture_list">
+                    
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/subfoot.html" ?>
+        
+<script src="./js/sub2_4.js"></script>
+<script src="./js/sub2_4.json"></script>
+</body>
+</html>

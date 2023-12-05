@@ -1,0 +1,43 @@
+.visual{width: 100%; height: 220px; position: relative; left: 50%; transform: translate(-50%); z-index: -10;
+    background: url(../sub3_img/header.png) no-repeat center; background-size: cover;}
+#content .titleArea p::before{content: ""; display: block; width: 270px; height: 12px; background: #fff77d; transform: skewX(-30deg) translate(-50%); position: absolute; left: 50%; top: 10px; z-index: -10;}
+
+.contentArea .rehaus{margin: 50px 0;}
+.contentArea .rehaus h3{display: block; width: 100%; height: 100px; background: url(../sub3_img/rd.png)no-repeat right top; background-size: cover; font-size: 1.365em; font-weight: 700; color: #fff; position: relative; margin-bottom: 5px; text-shadow: 2px 2px 2px rgba(0,0,0,.1); text-align: center; line-height: 100px;}
+.rehaus p{padding: 0 5%;}
+
+.contentArea .work{box-sizing: border-box; margin-bottom: 50px;}
+.work h3{font-size: 1.365em; font-weight: 700; color: #00569f; margin-bottom: 20px; padding: 0 5%; text-align: center;}
+.work ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 5%;}
+.work ul li{width: 49%; position: relative; border-radius: 6px; overflow: hidden; margin-bottom: 2%;}
+.work li div img{width: 100%; filter: brightness(.9);}
+.work li dl{position: absolute; left: 50%; bottom: 0; transform: translate(-50%); width: 100%; color: #fff; text-align: center; background: rgba(0,0,0,.5); display: block; height: 35px; transition: all .3s ease-out;}
+.work li dl dt span{display: block; line-height: .3em; padding-top: 5px; opacity: .6;}
+.work li dl dd{margin: 5px 0;}
+.work li dl.card dt span{display: none;}
+.work li dl.card{height: 100%; display: flex; flex-wrap: wrap; align-content: space-around; justify-content: center; align-items: center; background: #d7182a;}
+.work li dl.card dt{display: none;}
+.work li dl.card dd{width: 100%; padding: 0 5px; box-sizing: border-box;}
+
+.contentArea .process{padding: 50px 0; background: #eff0f3;}
+.contentArea .process>h3{font-size: 1.365em; font-weight: 700; color: #00569f; margin-bottom: 20px; padding: 0 5%; text-align: center;}
+.contentArea .swiper-wrapper{padding-bottom: 20px;}
+.swiper-container .swiper-slide img{width: 100%; border-radius: 20px;}
+.contentArea .swiper-slide dl dt{font-weight: 700; margin: 5px 0;}
+.swiper-container .swiper-pagination{bottom: 50px;}
+html body #wrap #content .contentArea .swiper-container .swiper-pagination-bullet-active{color: #d7182a;}
+
+
+.contentArea .education{margin: 50px 0; padding: 0 5%;}
+.education h3{font-size: 1.365em; font-weight: 700; color: #00569f; margin-bottom: 20px; padding: 0 5%; text-align: center;}
+.education ul{}
+.education ul li{margin-left: 60px; position: relative;}
+.education ul li:nth-child(2){margin: 10px 0 10px 60px;}
+.education ul li::before{position: absolute; left: -60px; top: 50%; transform: translateY(-50%); font-size: 2em; font-weight: 700; font-size: 1.786em; color: #fdaf17; display: block; width: 40px; height: 40px; border-radius: 10px; text-align: center;}
+.education ul li:nth-child(1)::before{content: "1";}
+.education ul li:nth-child(2)::before{content: "2";}
+.education ul li:nth-child(3)::before{content: "3";}
+
+.education dl{padding-bottom: 20px; border-bottom: 1px solid #ccc;}
+.education ul li:nth-of-type(3) dl{padding-bottom: 0; border-bottom: none}
+.education dl dt{font-weight: 700; margin: 20px 0 5px;}

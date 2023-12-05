@@ -1,0 +1,78 @@
+/* 회사소개 본문 css */
+#content .title_area p{font-family: 'Roboto', sans-serif;}
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 50%; top: 18px; margin-left: -550px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 1100px;}
+
+#content .content_area{}
+/* #content .info{width: 2000px; height: 300px; background: bisque; position: relative; left: 50%; top: 0; margin-left: -1000px;} */
+
+.content_area .rehaus{margin-top: 100px;}
+.content_area h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; padding-top: 120px; position: relative;}
+.rehaus>h3{color: #fff;}
+.content_area .rehaus>h3::before{content: ""; display: block; background: url(../images/content3/rd.jpg); width: 2000px; height: 400px; position: absolute; left: 50%; top: 0; margin-left: -1000px; z-index: -10; filter: brightness(.8);}
+.rehaus>p{text-align: center; line-height: 2.25em; font-size: 1.125em; margin: 20px 0 140px; color: #fff;}
+
+.rehaus .work{}
+.work ul{display: flex; justify-content: space-between; margin: 100px 0;}
+.work ul li{text-align: center; width: 295px;}
+.work li dl{padding: 0 23px; height: 430px; position: relative;}
+.work dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px; position: relative; padding-top: 280px;}
+.work dl dt::before{content: ""; display: block; width: 250px; height: 250px; position: absolute; left: 50%; top: 15px; transform: translate(-50%);}
+.work li:nth-of-type(1) dt::before{background: url(../images/content3/proposal.jpg);}
+.work li:nth-of-type(2) dt::before{background: url(../images/content3/design.jpg);}
+.work li:nth-of-type(3) dt::before{background: url(../images/content3/care.jpg);}
+.work dl dd{margin-bottom: 15px;}
+.work li:nth-of-type(4) dt::before{background: url(../images/content3/construction.jpg);}
+.work li dd::after{content: ""; display: block; width: 100%; height: 4px; background: #d7182a; position: absolute; left: 0; bottom: 0; transition: all .2s ease-out; transform: scaleX(0); border-radius: 2px;}
+.work li:hover dd::after{transform: scaleX(1);}
+
+.rehaus .process{background: #eff0f3; position: relative; left: 50%; top: 0; margin-left: -1000px; width: 2000px;}
+.process ul{padding-bottom: 100px; width: 2000px; margin: 350px auto 0; height: 1600px;}
+.process li{ background: #fff; box-sizing: border-box; margin-bottom: 50px; height: 200px; padding-left: 400px;}
+.process li:nth-of-type(2), .process li:nth-of-type(3), .process li:nth-of-type(4){margin-top: 300px;}
+.process li:nth-of-type(even){text-align: right;}
+.process li dl{width: 600px; box-sizing: border-box; padding: 35px; position: relative;}
+.process li:nth-of-type(even) dl{margin-left: 600px;}
+.process li dl::after{content: ""; display: block; width: 600px; height: 400px; position: absolute; left: 100%; top: -225px; box-shadow: 0 0 10px 2px rgba(0,0,0,.4);}
+.process li:nth-of-type(1) dl::after{background: url(../images/content3/introduction.jpg);}
+.process li:nth-of-type(2) dl::after{background: url(../images/content3/deployment.jpg);}
+.process li:nth-of-type(3) dl::after{background: url(../images/content3/standard.jpg);}
+.process li:nth-of-type(4) dl::after{background: url(../images/content3/master.jpg);}
+.process li:nth-of-type(even) dl::after{left: -600px;}
+.process dl dt{font-size: 1.5em; font-weight: 700; margin-bottom: 15px;}
+.process li:hover dl dt{color: #069;}
+.process dl dd{}
+
+
+
+.rehaus .education{}
+.education ul{display: flex; justify-content: space-between; margin: 100px 0 245px 0;}
+.education li{width: 380px; border: 4px solid #eff0f3; box-sizing: border-box; padding: 30px; position: relative; transition: all .2s ease-out;}
+.education li:nth-of-type(1) dl::after{content: '1'; font-size: 200px; font-weight: 700; background-image:  url(../images/content3/con1.png);}
+.education li:nth-of-type(2) dl::after{content: '2'; font-size: 200px; font-weight: 700; background-image:  url(../images/content3/con2.png);}
+.education li:nth-of-type(3) dl::after{content: '3'; font-size: 200px; font-weight: 700;background-image:  url(../images/content3/con3.png);}
+.education li dl::after{content: "1"; font-size: 200px; position: absolute; left: 148px;  top: 70px; margin-left: -24px;
+    color: transparent;
+    /* 글자색을 투명하게 처리 */
+
+    -webkit-text-fill-color: transparent;
+  
+    background-clip: text; /* 글자에 배경이미지를 넣기 */
+  
+    -webkit-background-clip: text;
+  
+  
+    background-size: 100%; 
+  
+    background-position: center; 
+  
+    background-repeat: no-repeat;
+
+
+    filter: brightness(.9);
+    width: 200px;
+}
+.education li dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px;}
+.education li dl dd::before{content: ""; display: block; width: 170px; height: 170px; background: #fff; position: absolute; left: 50%; top: 140px; transform: translate(-50%); margin-left: -4px;}
+.education li:hover{border-color: #fdaf17;}
+

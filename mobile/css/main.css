@@ -1,0 +1,85 @@
+/* CSS Document */
+
+/* 비주얼영역 */
+.visual .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+.visual .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+.visual img{width: 100%}
+
+.visual{position: relative;}
+.visual p{position: absolute; left: 0; top: 40%; width: 100%; text-align: center; font-size: 1.365em; font-weight: 700; text-shadow: 2px 2px 2px rgba(0,0,0,.3); color: #fff; padding: 0 3%; box-sizing: border-box;}
+
+.visual span{position: relative;}
+.visual span::after{content: 'hanssem mall →'; position: absolute; top: 35px; left:0;
+   font-size: .6em; font-weight: 500; display: block; width: 200px; text-align: left; text-shadow: none;}
+#wrap .visual .swiper-pagination-bullet-active {
+    background: #de001d;
+    opacity: 1;
+    width: 30px; border-radius: 8px;
+}
+.visual .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: .3;
+}
+
+#content{width: 100%; text-align: center;}
+#content .about{margin: 50px 0;  padding: 0 5%; box-sizing: border-box; position: relative;}
+#content h3{text-align: center; font-weight: 700; font-size: 1.786em; color: #069; margin-bottom: 20px;}
+
+.about h3{position: absolute; left: 50%; top: 0; transform: translate(-50%);}
+.about div{padding-top: 50px;}
+.about div p:nth-child(1){font-size: 1.286em; font-weight: 700; position: relative;}
+.about div p:nth-child(1)::before{content: ""; display: block; width: 220px; height: 14px; background: #fff77d; transform: skewX(-30deg) translate(-50%); position: absolute; left: 50%; top: 12px; z-index: -10;}
+.about div p:nth-child(2){margin: 10px 0 15px;}
+.about ul{overflow: hidden; width: 100%;}
+.about ul li{float: left; width: 33.33%; padding: 0 1%; box-sizing: border-box;}
+.about ul li a{position: relative; overflow: hidden;}
+.about ul li img{width: 100%; border-radius: 20%;}
+.about ul li p{font-size: .85em; font-weight: 700; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+
+#content .agencies{width: 100%; background: url(../images/backgroundx2.png) no-repeat center; background-size: cover;  padding: 50px 0; box-sizing: border-box;}
+.agencies .swiper-container{width: 100%;}
+#content .agencies .swiper-slide{background-position: center; background-size: cover; width: 250px; height: 350px; background: #fff; border-radius: 12px; padding: 40px 0; box-sizing: border-box;}
+.agencies .swiper-slide img {display: block; width: 150px; margin: 0 auto;}
+#content .agencies .swiper-container-3d .swiper-slide-shadow-left{border-radius: 12px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .agencies .swiper-container-3d .swiper-slide-shadow-right{border-radius: 12px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .agencies .swiper-pagination{padding-top: 10px; bottom: 0;}
+.agencies .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #000;
+}
+  #wrap .agencies .swiper-pagination-bullet-active {
+    background: #de001d;
+}
+.agencies dl{padding: 30px 50px 0;}
+.agencies dl dt{font-size: 1.286em; font-weight: 700; line-height: 1em; margin-bottom: 15px;}
+.agencies div{position: relative;}
+.agencies i{font-size: 1.5em; font-weight: 700; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+#content .sustainability{margin: 50px 0; padding: 0 5%; box-sizing: border-box;}
+.sustainability .swiper-container{}
+.sustainability .swiper-container img{width: 100%; border-radius: 20px;}
+.sustainability .swiper-container dl{background: #fff; width: 100%; padding: 30px 0;}
+.sustainability .swiper-container dt{font-size: 1.286em; font-weight: 700; margin-bottom: 10px;}
+.sustainability .swiper-container dd{}
+.sustainability div{position: relative; overflow: hidden;}
+.sustainability p{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-weight: 500; color: #fff;}
+.sustainability .swiper-scrollbar{bottom: 0;}
+.sustainability .swiper-scrollbar-drag{background: #de001d; opacity: 1;}
+
+#content .recruit{overflow: hidden;}
+.recruit a{position: relative;}
+.recruit div{position: absolute; left: 5%; top: 0;}
+#content .recruit h3{margin: 50px 0 10px; text-align: left;}
+#content .recruit p{text-align: left; color: #fff;}
+#content .recruit img{width: 100%;}

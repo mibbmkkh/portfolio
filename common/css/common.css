@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('aos.css');
+
+/* CSS Reset */
+
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{font-size: 16px;}
+body{font-family: 'Noto Sans KR', sans-serif; color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+.hidden{display: block; position: absolute;
+  left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff}
+a{color: #333; text-decoration: none; display: block;}
+img{border: 0; vertical-align: top}
+
+#skipNav{position:relative;width:100%;overflow:hidden; z-index: 110; font-family: 'Noto Sans KR', sans-serif;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; color:#fff; font-size:1.2em; font-weight: 700;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block;height:auto;padding:15px 0; background: rgba(215,24,42,1);}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+/* wrap */
+.wrap{width: 100%; overflow: hidden;}
+
+/* 헤더 공통 css */
+#headerArea{width: 100%; background: rgba(255,255,255,.6); position: fixed; left: 0; top: 0; z-index: 1000; overflow: hidden; height: 108px;}
+#headerArea .header_inner{width: 1200px; margin: 0 auto; color: #fff; position: relative;}
+#headerArea .logo{position: absolute; left: 0; top: 0; padding: 50px 65px 0 0;}
+#headerArea .logo a{display: block; width: 167px; height: 57px; background: url(../images/logo.png) no-repeat center; overflow: hidden;}
+#headerArea .logo a span{display: block; position: absolute;
+  left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff}
+
+#gnb{clear:both;width:1200px;}
+	
+	#gnb ul.dropdownmenu{float:left; height:57px; width: 950px; padding: 57px 0 0 250px; }
+	#gnb ul.dropdownmenu h3{height: 57px;}
+  #gnb .dropdownmenu .menu{position:relative; float:left; width:14%; height: 57px; text-align: center;}
+    #gnb ul.dropdownmenu li a.depth1{display:block ; text-align: center; transition: all .5s; height: 57px; font-size: 1.375em; font-weight: 500; position: relative;}
+
+	#gnb ul.dropdownmenu li ul{width:100%; height:120px; position:absolute; top:57px;left:0;
+		  padding:15px 0 20px 0; line-height:2em; display:none;}
+
+	#gnb ul.dropdownmenu li ul li{ text-align:center; font-weight:bold;}
+	#gnb ul.dropdownmenu li ul li a{display:block;  color:#666; transition: all .5s; font-weight: 500;}
+ 
+
+
+  #headerArea #gnb ul.dropdownmenu li a.depth1::before{content: ''; display: block; width: 0; height: 4px; border-radius: 2px; position: absolute; left: 50%; bottom: 5px; transform: translate(-50%); background: #d7182a; transition: all 0.3s ease;}
+  #headerArea #gnb ul.dropdownmenu li:hover a.depth1::before{width: 133px;}
+
+  #gnb .m7{}
+  #gnb .m7 i{font-size: 40px; line-height: 40px;}
+
+
+/* 푸터 공통 css */
+#footerArea{background: #fff; height: 300px;}
+#footerArea .footer_inner{width: 1200px; margin: 0 auto; color: #666;}
+
+#footerArea .footer_inner .footer_logo{margin-top: 77px;}
+#footerArea .footer_inner{position: relative;}
+#footerArea .bottom_menu ul{font-size: 1.125em; font-weight: 700; position: absolute; left: 185px; top: 80px;}
+#footerArea .bottom_menu li{font-weight: 400; float: left; margin-right: 20px; position: relative;}
+#footerArea .bottom_menu li::before{content: ""; display: block; height: 20px; width: 1px; background: #ccc; position: absolute; top:5px; left: -10px;;}
+#footerArea address{overflow: hidden;}
+#footerArea address p{float: left; margin: 15px 35px 15px 0; position: relative;}
+#footerArea address p::before{content: ""; display: block; height: 20px; width: 1px; background: #ccc; position: absolute; top:5px; left: -20px;;}
+#footerArea address .copy{font-size: 0.875em;}
+#footerArea .sns{overflow: hidden; position: absolute; right: 180px; top: 115px; font-size: 40px;}
+#footerArea .sns a{color: #ccc;}
+#footerArea .sns li{float: left; margin-right: 20px;}
+/* #footerArea .family a{position: absolute; right: 0; top: 122px; text-align: center; padding: 10px 0; width: 175px; overflow: hidden; background: #ccc;}
+#footerArea .family a i{margin-left: 5px;} */
+
+.select{
+  position: relative; left: 1020px; top: -73px; text-align: center; width: 175px; background: #ccc;}
+.select .arrow{ display:block; font-size:1em; padding: 10px 0;
+  text-align: center; transition: all 1s;}
+.select .arrow i{font-size:.8em ; color: #333; transition: all 1s;}
+.select .arrow:hover{color:#fff; background: #333;}
+.select .arrow:hover i{color: #fff}
+.select .aList{position:absolute; top:-175px; width: 175px;
+  background: #fff; display:none}
+  /* ul을 a태그 위에다가 포지션 앱솔루트로 싹 올려줘 */
+  /* 레프트-1은 보더때메 넣은거라 보더 안넣을거면? 빼도 될듯 */
+.select .aList li{ line-height:1.5em;}
+.select .aList li a{display:block;text-align: center; padding: 5px 0; transition: all 1s; padding: 10px 0;}
+.select .aList li a:hover{color:#fff; background: #333;}
+
+
+#footerArea .top_move{width: 70px; height: 70px; background: #d7182a; color: #fff; border-radius: 50%; font-size: 1em; overflow: hidden; transition: all .5s; position: fixed; left: 50%; bottom: 120px; margin-left: 625px; display: none;}
+#footerArea .top_move:hover{background: #fcaf17; color: #333; transition: all .5s; z-index: 80;}
+#footerArea .top_move span{display: block; text-align: center; margin-top: 20px;}

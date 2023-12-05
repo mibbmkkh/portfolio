@@ -1,0 +1,47 @@
+/* 주요연혁 본문 */
+
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 50%; top: 18px; margin-left: 95PX; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 200px;}
+
+.content_area .history{width: 2000px; background: url(../images/content3/background.png) no-repeat fixed; position: relative; left: 50%; top: 0; margin-left: -1000px;}
+.content_area .his_inner{width: 1200px; margin: 0 auto; margin: 0 auto; overflow: hidden;  margin-bottom: 150px;}
+
+.subNav{}
+.boxMove{}
+.subNav ul{width: 1200px; margin: 0 auto; overflow: hidden;}
+.subNav ul li{width: 33.33%; float: left; text-align: center; border: 1px solid #ccc; background: #fff; border-left-width: 0; box-sizing: border-box; margin: 0 auto;}
+.subNav ul li:first-child{border-left-width: 1px;}
+.subNav ul li a{padding: 18px 0; font-size: 1.125em;}
+.subNav ul li:hover a,.depth ul li .current{background: #d7182a; color: #fff; font-weight: 700;}
+
+.his_con{position: relative;}
+.his_year, .his_year1{position: absolute; left: 0; top: 0; font-size: 9.375em; font-weight: 700;}
+.his_year1 .year, .his_year2 .year, .his_year3 .year{transition: all .2s ease-out;}
+.his_year>div{color: #fdaf17;}
+.his_year div span{color: #fff; -webkit-text-stroke: 2px #069;}
+.his_year div .year{margin: -217px 0 0 170px;}
+
+.his_con>dl{margin-left: 700px; border-bottom: 1px solid #ccc;}
+.his_con>dl dd span{font-size: 1.875em; font-weight: 500; color: #d7182a; line-height: 3em;}
+.his_con>dl dd{text-align: left; line-height: 2.25em; margin: 80px 0 100px;}
+#his_1999_1970 dl:last-of-type{border-bottom: 0;}
+#his_1999_1970 dl:last-of-type dd:last-of-type{margin-bottom: 0; padding-bottom: 0;}
+.his_con>dl img{margin-top: 50px; border-radius: 50px;}
+
+.history .his_inner section{position: relative; opacity: 0;
+    transition: all .5s}
+
+.navOn{position: fixed; width: 100%;
+    z-index:60; left:0; top: 0px;}
+.navBox{background: #fff;}
+.navBox nav{width:1200px; margin: 0 auto}
+.navBox ul li a.spy{
+    background: #d7182a; color: #fff; font-weight: 700;
+ }
+.history .his_inner section.boxMove{
+    top:0; opacity: 1 ;
+}
+ .text{position: fixed; right:0; top: 0;
+    font-size: 50px; z-index: 10000
+}
+.navOn1{position: fixed; top: 140px; left: 50%; margin-left: -600px;}

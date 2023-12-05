@@ -1,0 +1,54 @@
+/* 고객감동경영 본문 */
+
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 0; top: 18px; margin-left: 320px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 390px;}
+
+.impression{width: 1200px; margin: 0 auto; padding-top: 100px; position: relative;}
+.impression>p{text-align: center; line-height: 2.25em; font-size: 1.125em;}
+.safety>h3{font-size: 2.5em; font-weight: 700; color: #069; position: absolute; left: 50%; top: 50px; margin-left: -80px;}
+.safety>p:nth-of-type(1){font-size: 1.875em; font-weight: 700; color: #d7182a;  width: 500px; width: 500px; position: relative; left: 50%; top: 180px; margin-left: 50px;}
+.safety>p:nth-of-type(1) span{font-family: 'Roboto', sans-serif;}
+.safety>p:nth-of-type(1)::after{content: ""; display: block; width: 601px; height: 400px; background: url(../images/content2/Safety.jpg)no-repeat; position: absolute; left: -650px; top: -10px;}
+.safety>p:nth-of-type(2){font-size: 1.125em; text-align: justify; line-height: 2.25em; width: 500px; margin: 196px 50px 100px 650px;}
+
+.prevention>p{font-size: 1.750em; font-weight: 700; text-align: center;}
+.prevention ul
+.prevention li{}
+.prevention li dl{overflow: hidden; margin-top: 100px;}
+.prevention dl dt{font-weight: 700; position: relative}
+.prevention dl dt::before{content: ""; display: block; width: 1195px; height: 1px; background: #fdedee; position: absolute; left: 2px; top: 130px; z-index: -10;}
+.prevention li:nth-of-type(2) dl dt::before{width: 655px;}
+.prevention dl dd{float: left; width: 115px; height: 115px; box-shadow: 0 0 0 1px #fdedee inset; background: #fff; margin: 50px 0 0 20px; text-align: center; line-height: 115px; border-radius: 50%;
+    animation-name: animationColor;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;}
+    @keyframes animationColor {
+        from {background: #fff;}
+        50% {background: #d7182a; font-weight: 500;}
+        to {background: #fff;}}
+.prevention dl dd:nth-of-type(1){margin-left: 2px;}
+.prevention dl dd:nth-of-type(2){animation-delay: 1s;}
+.prevention dl dd:nth-of-type(3){animation-delay: 2s;}
+.prevention dl dd:nth-of-type(4){animation-delay: 3s;}
+.prevention dl dd:nth-of-type(5){animation-delay: 4s;}
+.prevention dl dd:nth-of-type(6){animation-delay: 5s;}
+.prevention dl dd:nth-of-type(7){animation-delay: 6s;}
+.prevention dl dd:nth-of-type(8){animation-delay: 7s;}
+.prevention dl dd:nth-of-type(9){animation-delay: 8s;}
+
+
+
+.quality h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; margin-top: 100px;}
+.quality>p:nth-of-type(1){font-size: 1.875em; font-weight: 700; color: #d7182a;  width: 500px; width: 500px; margin: 100px 50px 36px 50px; position: relative; padding-top: 40px; transition: all .3s;}
+.quality>p:nth-of-type(1)::after{content: ""; display: block; width: 601px; height: 400px; background: url(../images/content2/quality.jpg)no-repeat; position: absolute; right: -650px; top: 0;}
+.quality>p:nth-of-type(2){font-size: 1.125em; text-align: justify; line-height: 2.25em;  width: 500px; margin: 50px 50px 150px 50px;}
+.quality div p:nth-of-type(1){font-size: 1.750em; font-weight: 700; text-align: center; margin-bottom: 36px;}
+.quality div p:nth-of-type(2){font-size: 1.125em; text-align: justify; line-height: 2.25em; text-align: center;}
+.quality div p:nth-of-type(2)::after{content:""; display: block; width: 530px; height: 400px; background: url(../images/content2/six_sigma3.jpg) no-repeat; margin-top: 100px; padding-bottom: 150px; margin-left: 670px;}
+.quality div img{transition: all .3s;}
+.quality div img:nth-of-type(1){position: absolute; left: 0; bottom: 150px;}
+.quality div img:nth-of-type(2){position: absolute; left: 335px; bottom: 150px;}
+.quality div img:hover{transform: scale(1.1);}

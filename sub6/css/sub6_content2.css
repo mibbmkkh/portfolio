@@ -1,0 +1,25 @@
+/* 오시는길 본문 */
+
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 140px; top: 24px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 273px;}
+
+.map_box{width: 1200px; margin: 0 auto;}
+.map_box ul li:hover a, .map_box ul li .current{background: #d7182a; color: #fff; font-weight: 700;}
+.map_box span{font-family: 'Roboto', sans-serif;}
+.map_box ul{overflow: hidden; margin: 150px 0; list-style: none;}
+.map_box ul li{width: 49.9%; float: left; text-align: center; border: 1px solid #ccc; border-left-width: 0;}
+.map_box ul li a{color: #333; text-decoration: none; display: block; padding: 15px 0; text-align: center;}
+.way{width: 1200px; margin: 0 auto;  overflow: hidden;}
+.way:nth-of-type(1){ margin-top: 100px;}
+.way h3{font-size: 40px; text-align: center; margin-bottom: 50px;}
+.way:nth-of-type(2) h3{margin-top: 100px;}
+.way #map1, #map2{width: 1000px; margin: 0 auto; height: 600px; border: 1px solid #999;}
+.way #map1{margin-bottom: 100px;}
+.way #map2{margin-bottom: 100px;}
+
+.way dl{overflow: hidden; box-shadow: 0 10px 13px -4px rgba(0,0,0,.1);}
+.way dt{font-size: 1.5em; font-weight: 700; float: left; margin: 75px;}
+.way dl:nth-of-type(1) dt{margin-right: 121px;}
+.way dd{margin: 75px 70px 50px 0; line-height: 2.25em;}
+.way:nth-of-type(2){margin-bottom: 150px;}
+.way i{margin-right: 20px;}

@@ -1,0 +1,31 @@
+#content .titleArea p::before{content: ""; display: block; width: 250px; height: 12px; background: #fff77d; transform: skewX(-30deg) translate(-50%); position: absolute; left: 50%; top: 10px; z-index: -10;}
+.contentArea .business{margin: 50px 0; width: 100%; position: relative;}
+
+.business>div:nth-of-type(1){width: 100%; padding: 0 5%; box-sizing: border-box;}
+.business>div:nth-of-type(1) dl{margin-right: 18%;}
+
+.business>div:nth-of-type(1) div{width: 82%; padding-left: 18%; margin: 20px 0 30px;}
+.business>div img{width: 100%;}
+
+.business>div:nth-of-type(1) dt{font-size: 1.286em; font-weight: 700; color: #d7182a;}
+
+.business>div:nth-of-type(2) dl dt{display: block; width: 100%; height: 100px; background: url(../sub1_img/business2.png)no-repeat right top; background-size: cover; font-weight: 700; position: relative; margin-bottom: 5px;}
+.business>div:nth-of-type(2) dl dt span{width: 100%; padding: 0 5%; box-sizing: border-box; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.business>div:nth-of-type(2) dl dd{padding: 0 5%;}
+
+.headquarter{width: 100%; height: 431px; padding: 0 5%; box-sizing: border-box;}
+.headquarter .headquarters{position: relative;}
+.headquarter>h3{text-align: center; font-size: 1.365em; font-weight: 700; color: #00569f; margin-bottom: 20px;}
+.headquarters li{width: 100%; height: 40px; border-radius: 15px 15px 0 0; overflow: hidden; margin-bottom: 10px; transition: all .3s ease-out;}
+.headquarters li:nth-child(1){background: #d7182a;}
+.headquarters li:nth-child(2){background: #fdaf17;}
+.headquarters li:nth-child(3){background: #00569f;}
+.headquarters li:nth-child(4){background: #fdaf17;}
+.headquarters li:nth-child(5){background: #d7182a;}
+.headquarters li>a{padding-top: 10px; color: #fff;}
+.headquarters li>a span{padding: 0 0 10px 5%; font-weight: 700;}
+.headquarters li>a div{overflow: hidden; padding: 10px 5%; margin-top: 10px;}
+.headquarters li>a div img{float: left; width: 89px; border-radius: 8px;}
+.headquarters li>a div p{margin-left: 99px;}
+
+.headquarter .headquarters .card{width: 100%; height: 173px; border-radius: 15px;}

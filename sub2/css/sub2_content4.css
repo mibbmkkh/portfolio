@@ -1,0 +1,26 @@
+/* 회사소개 본문 css */
+#content .title_area p{font-family: 'Roboto', sans-serif;}
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 50%; top: 18px; margin-left: -270px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 535px;}
+
+.furniture_search{margin-top:100px;}
+.furniture_search h2{font-size: 30px;font-weight: 500; text-align: center;}
+.furniture_search .search_box{position: relative; text-align: center; margin-top:50px;}
+.furniture_search .search_box input{width:600px; height:50px; outline:none; text-indent:20px; vertical-align: top; border:2px solid #d7182a; box-sizing: border-box; font-size:18px;}
+.furniture_search .search_box #btn2{height:50px; width:50px; padding:10px; vertical-align: top; position: absolute; top:0; right:350px; background: #d7182a; color:white; border:none; cursor: pointer;}
+.furniture_search .search_box .btn_all{height:50px; width:50px; padding:10px; vertical-align: top; position: absolute; top:0; right:300px; background: #d7182a; color:white; border:none; cursor: pointer;}
+.furniture_search dl{overflow: hidden; color:#069; width:800px; margin:0 0 50px 350px;}
+.furniture_search dl dt{float: left; padding:10px 50px 10px 0; margin-left: 30px; font-size: 1.2em; font-weight: 600px;}
+.furniture_search dl dd a{float: left; padding:10px 15px; }
+.furniture_search dl dd a:hover{color:#069}
+.furniture_search .btn_all:hover,.furniture_search #btn2:hover{color: #333;}
+
+.furniture_list ul{overflow: hidden;}
+.furniture_list ul li{width: 25%; height: 400px; float: left; text-align: center;}
+.furniture_list ul li img{width: 200px; height: 200px;}
+.furniture_list ul li dl{width: 200px; margin: 15px auto;} 
+.furniture_list ul li dt{font-size:18px ; font-weight: bold; margin-bottom: 10px;}
+.furniture_list ul li dd{line-height: 1.5em;}
+.furniture_list .discount{color: red;}
+.furniture_list dd:nth-of-type(1) b{color: #333;}
+.furniture_list{margin-bottom: 110px;}

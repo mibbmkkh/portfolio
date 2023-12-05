@@ -1,0 +1,76 @@
+/* 본문 css */
+
+#content .titleArea p::before{content: ""; display: block; width: 220px; height: 12px; background: #fff77d; transform: skewX(-30deg) translate(-50%); position: absolute; left: 50%; top: 10px; z-index: -10;}
+
+.contentArea .info{margin: 50px 0; width: 100%; padding: 0 5%; box-sizing: border-box; position: relative;}
+
+.info>div{width: 100%;}
+.info>div:nth-of-type(1) dl{margin-right: 18%;}
+.info>div:nth-of-type(2) dl{margin-left: 18%; text-align: right;}
+
+.info>div:nth-of-type(1) div{width: 82%; padding-left: 18%; margin: 20px 0 20px;}
+.info>div:nth-of-type(2) div{width: 82%; padding-right: 18%; margin-bottom: 20px;}
+.info>div img{width: 100%;}
+
+.info>img{width: 100%; position: absolute; left: 0; top: 50%; z-index: -10;transform: translateY(-50%);}
+
+.info>div dt{font-size: 1.286em; font-weight: 700; color: #d7182a;}
+/* .info>div:nth-of-type(2) dt::before{content: ""; display: block; width: 100%;} */
+
+.tabs {position:relative; width:100%; margin-bottom: 40px;} 
+.tabs a.tab {width:33.33%; padding: 10px 0; position:absolute; text-align: center;
+    background: #fff; transition: all .5s; border: 1px solid #ccc; box-sizing: border-box; border-left: none; border-right: none; z-index: 10;}
+.tabs a.tab1{left:0; top:0;}
+.tabs a.tab2{left:50%; top:0; transform: translate(-50%);}
+.tabs a.tab3{right: 0; top:0}
+
+.tabs .contlist{margin-top:50px; display: none;
+    line-height:1.5em; background: #eff0f3; position: relative; top: 40px;}
+
+.management>div{padding: 20px 5%; box-sizing: border-box; background: #fff; overflow: hidden;}
+.management>div:nth-of-type(1){padding-top: 50px; overflow: hidden; border-radius: 0 0 20px 20px;}
+.management>div:nth-of-type(2){margin: 10px 0; border-radius: 20px;}
+.management>div:nth-of-type(3){padding-bottom: 50px; border-radius: 20px 20px 0 0;}
+
+.management>div div{width: 70px; height: 70px; position: relative; float: left;}
+.management img{width: 100%;}
+.management span{font-weight: 700; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff;}
+.management>div p{margin-left: 80px;}
+
+.tabs .design{background: #fff;}
+.design ul{text-align: center; display: flex; justify-content:space-between;}
+.design ul li{float: left; width: 33.33%; position: relative; height: 84px;}
+.design ul li:nth-child(1){background: #eaf1f7;}
+.design ul li:nth-child(2){background: #fff8eb;}
+.design ul li:nth-child(3){background: #fdedee;}
+.design li div{position: absolute; top: 50px; left: 50%; transform: translate(-50%,0); width: 100%;}
+.design div i{font-size: 2em; background: #fff; padding: 20px; border-radius: 50%;}
+.design li:nth-child(1) div i{color: #00569f;}
+.design li:nth-child(2) div i{color: #fdaf17;}
+.design li:nth-child(3) div i{color: #d7182a;}
+.design li dl{padding: 5px 5% 0; box-sizing: border-box;}
+.design li dl dt{font-weight: 700;}
+.design>div{margin-top: 151px; text-align: center;}
+.design>div h4{font-size: 1.286em; font-weight: 700; color: #00569f; margin-bottom: 20px;}
+.design>div span{font-weight: 700;}
+.design>div p{padding: 0 5%;}
+.design img{width: 100%; margin-top: 50px;}
+
+
+.ci .dock{overflow: hidden; position: absolute; right: 5%; bottom: 50px;}
+.ci .dock .mbutton{float: left; margin: 0 3px; display:block; border-radius: 30px; position: relative; width: 30px; height: 30px;}
+.ci .dock .mbutton:nth-of-type(1){background: #d7182a; width: 100px;}
+.ci .dock .mbutton:nth-of-type(2){background: #fdaf17;}
+.ci .dock .mbutton:nth-of-type(3){background: #00569f;}
+.ci .dock .mbutton span{display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-weight: 700; color: #fff;}
+
+.tabs .ci{background: #fff;}
+.ci div{width: 100%; padding: 20px 5% 0; box-sizing: border-box;}
+.ci div:nth-of-type(1){padding-top: 50px;}
+.ci div:nth-of-type(2){padding-bottom: 80px;}
+.ci div:nth-of-type(1) span{font-weight: 700;}
+.ci img{width: 265px; margin-left: 50%; transform: translate(-50%);}
+
+.ci div:nth-of-type(2) p span{font-size: 1.786em;
+    font-weight: 700;
+    color: #d7182a;}

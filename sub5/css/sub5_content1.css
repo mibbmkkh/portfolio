@@ -1,0 +1,147 @@
+/* 직무소개 본문 */
+
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 338px; top: 20px; transform: skewX(-30deg); z-index: -10; transition: all .3s ease-out;}
+#content:hover .title_area p::before{width: 520px;}
+
+.content_area{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.qualities{text-align: center; padding-top: 100px;}
+.qualities h3{font-size: 2.5em; font-weight: 700; color: #069; margin-bottom: 20px;}
+.qualities>div{position: relative; width: 1200px; height: 875px; margin: 0 auto; padding-top: 120px; overflow: hidden;}
+.qualities ul{position: absolute; left: 50%; top: 125px; transform: translate(-50%); z-index: 10;}
+.qualities ul li{margin-bottom: 95px;}
+.qualities ul li:first-of-type{margin-bottom: 145px;}
+.qualities dl{position: relative;}
+.qualities dl dt{font-size: 1.750em; font-weight: 700; color: #fff; margin-top: 105px; padding-bottom: 5px; position: relative;}
+.qualities dl dd{position: absolute; text-align: left; width: 310px; margin-top: -18px;}
+.qualities dl dd::after{content: ""; display: block; width: 70px; height: 70px; background: #fff77d; border-radius: 50%; position: absolute; z-index: -10; right: -34px;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;}
+  @-webkit-keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(.95, 1.05, 1);
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, .95, 1);
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(.95, 1.05, 1);
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, .95, 1);
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+.qualities li:nth-child(even) dl dd::after{ left: -34px; top: -10px;}
+.qualities li:nth-child(odd) dd{text-align: right;}
+.qualities li:nth-child(1) dd::after{top: -10px;}
+.qualities li:nth-child(3) dd::after{ top: -24px;}
+.qualities li:nth-of-type(1) dd{right: -440px; top: 76px;}
+.qualities li:nth-of-type(2) dd{left: -440px; top: 42px;}
+.qualities li:nth-of-type(3) dd{right: -440px; top: 52px;}
+.qualities li:nth-of-type(4) dd{left: -440px; top: 42px;}
+.qualities i{font-size: 80px; text-align: center; color: #fff; position: absolute; width: 120px; height: 120px; padding-top: 20px; box-sizing: border-box; border-radius: 50%; background: #fdaf17; transition: all .5s ease-out; z-index: 10; left: 50%; transform: translate(-50%); opacity: 0; transform: scale(.5); margin-left: -60px;}
+.qualities i:nth-of-type(1){top: 160px;}
+.qualities i:nth-of-type(2){top: 450px;}
+.qualities i:nth-of-type(3){top: 530px;}
+.qualities i:nth-of-type(4){top: 600px;}
+
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 317px;
+    top: 250px;
+    transform-style: preserve-3d;
+    transform: rotateX(315deg) rotateY(315deg);
+  }
+.cube .face
+{
+    position: absolute;
+    border: 2px solid rgba(0,0,0,0);
+}
+.front, .back, .right, .left {
+    width: 300px;
+    height: 600px;
+  }
+.top_down, .bottom_up {
+    width: 300px;
+    height: 300px;
+  }
+.top, .bottom{
+    width: 300px;
+    height: 300px;
+  }
+.cube .front{transform: rotateY(0deg) translateZ(150px); }
+.cube .back{transform: rotateY(180deg) translateZ(150px); background: #fdedee;}
+.cube .right{transform: rotateY(90deg) translateZ(150px); }
+.cube .left{transform: rotateY(-90deg) translateZ(150px); background: #fdedee;}
+.cube .top{transform: rotateX(90deg) translateZ(400px); margin-top: 247px; background: #d7182a;}
+.cube .top_down{margin-top: 450px; background: #e14e5b;}
+.cube .top_down,.cube .bottom_up{transform: rotateX(90deg) translateZ(400px);}
+.cube .bottom_up{margin-top: 650px; background: #ea838c;}
+.cube .bottom{transform: rotateX(-90deg) translateZ(400px); margin-top: 50px; background: #f4b8bd; box-shadow: 7px -3px 18px 7px rgba(0,0,0,.2);}

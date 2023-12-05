@@ -1,0 +1,92 @@
+/* 회사소개 본문 css */
+#content .title_area p{font-family: 'Roboto', sans-serif;}
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 50%; top: 18px; margin-left: -380px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 750px;}
+
+#content .content_area{}
+/* #content .info{width: 2000px; height: 300px; background: bisque; position: relative; left: 50%; top: 0; margin-left: -1000px;} */
+
+.content_area .interior{margin-top: 100px;}
+.content_area h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; padding-top: 120px; position: relative;}
+.interior>h3{color: #fff;}
+.content_area .interior>h3::before{content: ""; display: block; background: url(../images/content2/ic.jpg); width: 2000px; height: 400px; position: absolute; left: 50%; top: 0; margin-left: -1000px; z-index: -10; filter: brightness(.8);}
+.interior>p{text-align: center; line-height: 2.25em; font-size: 1.125em; margin: 20px 0 140px; color: #fff;}
+
+.interior .work{}
+.work ul{margin: 100px 0;}
+.work ul li{ overflow: hidden;}
+.work li div{overflow: hidden; width: 600px;}
+.work li img:hover{border: none}
+.work li:nth-of-type(1) div:nth-of-type(1), li:nth-of-type(1) div:nth-of-type(2){padding-top: 10px;}
+.work li:nth-of-type(2) div:nth-of-type(1), li:nth-of-type(2) div:nth-of-type(2){padding-bottom: 10px;}
+.work div:nth-of-type(1){float: left; text-align: right;}
+.work div:nth-of-type(2){float: right; text-align: left;}
+.work div img{width: 250px; height: 250px; border-radius: 50%; box-sizing: border-box; border: 10px solid #fdaf17; box-shadow: 0 0 10px 2px rgba(0,0,0,.4); transition: all .2s ease-out;}
+.work div:nth-of-type(1) img{float: right; margin-left: 50px;}
+.work div:nth-of-type(2) img{float: left; margin-right: 50px;}
+.work dl{padding-top: 80px;}
+.work li:nth-of-type(2) div:nth-of-type(1) dl{padding-top: 90px;}
+.work li:nth-of-type(2) div:nth-of-type(2) dl{padding-top: 70px;}
+.work dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px;}
+.work dl dd{margin-bottom: 15px;}
+
+.interior .process{position: relative; left: 50%; top: 0; margin-left: -1000px; width: 2000px; height: 1720px;}
+.process h3::before{content: ""; display: block; width: 2000px; height: 1722px; position: absolute; left: 0; top: 0; background: #eff0f3; z-index: -20;}
+.process iframe{width: 1200px; height: 674px; margin-top: 100px;}
+.process>div{width: 1200px; margin: 0 auto;}
+.process>div>p{margin: 100px 0 100px 475px; text-align: center; line-height: 83px; position: relative; border: 1px solid #ccc; background: #eaf1f7; width: 250px; height: 84px;}
+.process>div>p::before{content: ""; display: block; width: 750px; height: 2px; background: #069; position: absolute; left: -250px; bottom: -50px;}
+.process>div>p::after{content: ""; display: block; width: 1px; height: 300px; background: #069; position: absolute; left: 50%; bottom: -300px;}
+.process ul{display: flex; justify-content:space-between; margin: 0 100px; position: relative; text-align: center;}
+.process ul::after{content: ""; display: block; border-radius: 50%; position: absolute; left: 50%; top: -58px; margin-left: -6px; width: 15px; height: 15px;
+    animation-name: animationOpa;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;}
+    @keyframes animationOpa {
+        from {background: #069;}
+        50% {background: #eff0f3}
+        to {background: #069;}}
+.process ul li{padding: 30px 25px; background: #eaf1f7; width: 200px; border: 1px solid #ccc;}
+.process ul li{position: relative;}
+.process ul li:nth-of-type(1)::after{content: ""; display: block; width: 1px; height: 250px; background: #069; position: absolute; left: 50%; bottom: -115px; z-index: -10;}
+.process ul li:nth-of-type(3)::after{content: ""; display: block; width: 1px; height: 250px; background: #069; position: absolute; right: 50%; bottom: -115px; z-index: -10;}
+.process>div ul li p{position: absolute; left: 0; top: 134px; background: #fff;  width: 200px; padding: 30px 25px;  border: 1px solid #069; font-weight: 500;}
+.process>div ul li:hover p{color: #069;}
+.process>div div p{font-size: 1.750em; font-weight: 700; margin-top: 225px; text-align: center;}
+.process>div div p
+
+
+
+.interior .education{position: relative;}
+.education ul{margin-top: 100px; display: flex; justify-content: space-between;  font-size: 1.125em; position: relative; text-align: center; height: 468px; }
+.education ul::before{content: ""; display: block; width: 1200px; height: 4px; background: #d7182a; position: absolute; left: 0; bottom: 342px;}
+.education ul li{width: 200px; position: relative;}
+.education ul li::after{content: ""; display: block; border-radius: 50%; background: #fff; position: absolute; left: 50%; top: 112px;  transform: translate(-50%); width: 15px; height: 15px;  border: 4px solid #d7182a;}
+.education ul li::before{content: ""; display: block; border-radius: 50%; background: #d7182a; position: absolute; left: 50%; transform: translate(-50%);
+    animation-name: animationSize;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;}
+    @keyframes animationSize {
+        from {width: 0; height: 0; top: 123px;}
+        50% {width: 40px; height: 40px; top: 103px;}
+        to {width: 0; height: 0; top: 123px;}}
+.education ul li:nth-of-type(1){}
+.education ul li:nth-of-type(2)::before{animation-delay: .2s;}
+.education ul li:nth-of-type(3)::before{animation-delay: .4s;}
+.education ul li:nth-of-type(4)::before{animation-delay: .6s;}
+.education ul li:nth-of-type(5)::before{animation-delay: .8s;}
+.education li dl{position: absolute; left: 0; top: 200px;}
+.education dl dt{font-weight: 700; margin-bottom: 20px;}
+
+.education .more{padding: 15px 0; width: 130px; overflow: hidden; position: relative; font-size: 1rem; line-height: 1; transition: all .5s ease-out; margin-top: 50px;  background: #fff; border-radius: 10px; position: absolute; right: 0; top: 80px;}
+.education .more:hover{transition: all .8s ease-out; background: #d7182a;}
+    .education .more span{position: relative; z-index: 10; display: block; color: #333; margin-left: 17px;}
+    .education .more:hover span{color: #fff;}
+    .education .more i{position: absolute; left: 50%; top: 16px; margin-left: 35px; font-weight: bold; color: #333;}
+    .education .more:hover i{color: #fff;}

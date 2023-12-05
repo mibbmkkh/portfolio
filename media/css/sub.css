@@ -1,0 +1,105 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; bottom: 8%; transform: translate(-50%);
+    width: 120px; height: 120px;
+}	
+.down img{      
+   width: 80px;
+   position: relative; left: 20px; padding-top: 50px;
+   transition: all .5s;
+   animation-name: animationDown;
+   animation-duration: 1.2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: normal;
+   animation-fill-mode: forwards;}
+   @keyframes animationDown {
+       from {bottom: 20px;}
+       30% {bottom: 40px;}
+       to {bottom: 20px;}
+      }
+   .down:hover img{transform: rotateY(360deg);}
+.down span{display: none;}
+
+	
+#content{width:100%; margin:0; background:rgba(2,7,15,.85);position: relative;}
+#content h2{font-family: 'Changa One', sans-serif; text-align: center; font-size: 5em; color: #f00; text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+   position: absolute; top: -550px; width: 100%;}
+#content h3{
+   text-align: center;
+   position: relative; z-index: 10;
+   font-family: 'Changa One', sans-serif; font-size: 4em;
+   padding-top: 4px;
+   padding-bottom: 60px; 
+   color: transparent;
+   background: linear-gradient(80deg, rgba(156,165,205,1) 29%, rgba(211,190,225,1) 45%, rgba(247,250,249,1) 72%, rgba(189,217,161,1) 99%, rgba(220,187,148,1) 100%);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 220px 5em;
+   -webkit-background-clip: text;}
+
+#footerArea{background:rgba(2,7,15,.85);}
+#footerArea>div{width: 100%;}
+#footerArea .footer_inner {top: 90px;}
+#footerArea .top {
+   position: absolute;
+   z-index: 10;
+   left: auto;
+   right: 6%;
+   bottom: -35px;
+   transform: none;}
+#footerArea .top img{
+   width: 80px;
+   transition: all .5s;
+   animation-name: animationTurn;
+   animation-duration: 1.2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: normal;
+   animation-fill-mode: forwards;}
+   @keyframes animationTurn {
+       from {transform: rotateY(0deg);}
+       to {transform: rotateY(360deg);}
+      }
+#footerArea .top:hover img{animation: step-end;}      
+#footerArea .top span{display: none;}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content h3{padding-bottom: 50px;}
+  
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+   .down img {width: 60px; height: 60px; left: 30px;}
+   #footerArea .top img {width: 60px; height: 60px;}
+   #footerArea .top{top: -36px;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   #content h3{padding-bottom: 30px;}
+}

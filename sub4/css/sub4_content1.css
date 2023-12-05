@@ -1,0 +1,124 @@
+/* 회사소개 본문 css */
+#content .title_area p{font-family: 'Roboto', sans-serif;}
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 50%; top: 18px; margin-left: -470px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 935px;}
+
+#content .content_area{}
+/* #content .info{width: 2000px; height: 300px; background: bisque; position: relative; left: 50%; top: 0; margin-left: -1000px;} */
+
+.content_area .kitchen{margin-top: 100px;}
+.content_area h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; padding-top: 100px; position: relative;}
+.kitchen>h3{color: #fff;}
+.content_area .kitchen>h3::before{content: ""; display: block; background: url(../images/content1/kd.jpg); width: 2000px; height: 400px; position: absolute; left: 50%; top: 0; margin-left: -1000px; z-index: -10; filter: brightness(.8);}
+.kitchen>p{text-align: center; line-height: 2.25em; font-size: 1.125em; margin: 20px 0 121px; color: #fff;}
+
+.kitchen .work{}
+.work ul{display: flex; justify-content: space-between; margin: 100px 0;}
+.work ul li{text-align: center; width: 295px;}
+.work li dl{padding: 0 23px;}
+.work dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px; position: relative; padding-top: 280px;}
+.work dl dt::before{content: ""; display: block; width: 250px; height: 250px; position: absolute; left: 50%; top: 15px; transform: translate(-50%); border-radius: 50%; box-shadow: 0 0 10px 2px rgba(0,0,0,.4); transition: all .4s;}
+.work dl dt:hover::before{box-shadow: 0 0 10px 2px rgba(253,175,23,1);}
+.work li:nth-of-type(1) dt::before{background: url(../images/content1/counseling.jpg);}
+.work li:nth-of-type(2) dt::before{background: url(../images/content1/design.jpg);}
+.work li:nth-of-type(3) dt::before{background: url(../images/content1/package.jpg);}
+.work dl dd{margin-bottom: 15px;}
+.work li:nth-of-type(4) dt::before{background: url(../images/content1/follow.jpg);}
+
+.kitchen .process{background: #eff0f3; position: relative; left: 50%; top: 0; margin-left: -1000px; width: 2000px;}
+.process div{padding-bottom: 100px; width: 1200px; margin: 187px auto 0;}
+.process div ul{}
+.process ul li{}
+.process div ul:nth-of-type(1){position: relative;}
+.process div ul:nth-of-type(1)::before{content: ""; display: block; width: 601px; height: 400px; background: url(../images/content1/process_1.jpg); position: absolute; right: 0; bottom: 0;}
+.process div ul:nth-of-type(2){position: relative; margin-top: 122px;}
+.process div ul:nth-of-type(2)::before{content: ""; display: block; width: 601px; height: 400px; background: url(../images/content1/process_2.jpg); position: absolute; left: -2px; bottom: 0;}
+.process ul:nth-of-type(1) li{}
+.process div ul:nth-of-type(2){text-align: right;}
+.process ul:nth-of-type(2) li{margin-left: 650px;}
+.process li dl{width: 550px; background: #fff; padding: 30px; box-sizing: border-box; border-radius: 20px; transition: all .4s ease-out;}
+.process li:nth-of-type(1) dl{margin-bottom: 30px;}
+.process li dl:hover{box-shadow: 0 10px 13px 7px rgba(0,0,0,.2); transform: translateY(-20px);}
+.process dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px;}
+.process dl dd{}
+
+
+.kitchen .education{height: 824px; position: relative;}
+.education>div:nth-of-type(1){perspective: 400px; position: absolute; left: 100px; top: 150px;}
+
+.arrow1{
+    width: 0px; height: 0px;
+    border-bottom: 100px solid transparent;
+    border-top: 101px solid #fff;
+    border-left: 61px solid #fff;
+    border-right: 61px solid #fff;
+    position: absolute; left: 766px; top: -35px;
+    transform-style: preserve-3d; transform: rotateX(40deg) skew(-58deg);
+    transition: all .5s ease-out;
+}
+.education:hover .arrow1{border-bottom: 100px solid transparent;}
+
+.back{width: 128px; height: 127px; position: absolute; left: 744px; top: 22px; z-index: -10; transform-style: preserve-3d; transform: rotateX(40deg) skew(-58deg); overflow: hidden; display: flex; align-items: end;}
+.back_1{background: #eaf1f7; width: 128px; height: 0; left: 0; top: 0; transform: rotate(0); transition: all .5s ease-out; transition-delay: .9s;}
+.education:hover .back_1{height: 128px;}
+.back_2{width: 128px; height: 127px; position: absolute; left: 744px; top: 22px; z-index: -20; transform-style: preserve-3d; transform: rotateX(40deg) skew(-58deg); background: #ddd;}
+
+.arrow2{width: 128px; height: 230px; background: #ddd; position: relative; left: 640px; top: 68px; transform-style: preserve-3d; transform: rotateX(40deg) skew(-60deg); display: flex; align-items: end; overflow: hidden;}
+.arrow2::before{content: ""; display: block; margin: 0; width: 128px; height: 0; background: #ddd; transition: all .5s ease-out; transition-delay: .45s; left: 0; top: 0; transform: rotate(0);}
+.education:hover .arrow2::before{height: 230px; background: #eaf1f7;}
+
+.arrow3{width: 200px; height: 280px; background: #ccc; position: relative; left: 300px; top: 0; transform-style: preserve-3d; transform: rotateX(50deg) skew(-67deg); display: flex; align-items: end; overflow: hidden;}
+.arrow3::before{content: ""; display: block; width: 400px; height: 0; background: #ccc; left: 0; top: 0; transform: rotate(0); transition: all .5s ease-out;}
+.education:hover .arrow3::before{height: 280px; background: linear-gradient(0deg, rgba(253,237,238,1) 15%, rgba(255,248,235,1) 60%, rgba(234,241,247,1) 100%);}
+
+.navOn1{height: 128px;}
+.navOn2::before{height: 230px; background: #eaf1f7;}
+.navOn3::before{height: 280px; background: linear-gradient(0deg, rgba(253,237,238,1) 15%, rgba(255,248,235,1) 60%, rgba(234,241,247,1) 100%);}
+
+.education ul{padding-top: 180px;}
+.education ul li{margin-bottom: 12px;}
+.education li dl{text-align: right;}
+.education dl dt{font-size: 1.125em; font-weight: 700; margin-bottom: 15px; transition: all .3s ease-out;}
+.education li:nth-of-type(1) dl dt{color: #d7182a;}
+.education li:nth-of-type(2) dl dt{color: #fdaf17;}
+.education li:nth-of-type(3) dl dt{color: #069;}
+
+.education li dt img{
+    border-radius: 50%; position: absolute; box-sizing: border-box; z-index: 10; transition: all .5s ease-out; box-sizing: border-box;}
+.education li dt::before{content: ""; display: block; background: rgba(0, 0, 0, .2); filter: blur(5px);}
+
+.education li:nth-of-type(1) dt img{width: 250px; height: 250px; left: 115px; bottom: 170px; border: 10px solid #d7182a;}
+.education li:nth-of-type(1) dt img:nth-of-type(2){opacity: 0;}
+.education li:nth-of-type(1) dt::before{ width: 200px; height: 40px; position: absolute; left: 140px; bottom: 155px; border-radius: 50%;}
+
+.education li:nth-of-type(2) dt img{font-size: 80px; width: 180px; height: 180px; left: 385px; bottom: 288px; border: 8px solid #fdaf17;}
+.education li:nth-of-type(2) dt img:nth-of-type(2){opacity: 0;}
+.education li:nth-of-type(2) dt::before{ width: 150px; height: 30px; position: absolute; left: 400px; bottom: 275px; border-radius: 50%;}
+
+.education li:nth-of-type(3) dt img{font-size: 50px; width: 120px; height: 120px; left: 580px; bottom: 370px; border: 7px solid #069;}
+.education li:nth-of-type(3) dt img:nth-of-type(2){opacity: 0;}
+.education li:nth-of-type(3) dt::before{ width: 100px; height: 20px; position: absolute; left: 587px; bottom: 360px; border-radius: 50%;}
+
+.education dl:hover img{transform: translateY(-100px); background: rgba(0, 0, 0, .3);}
+.education li:nth-of-type(1) dl:hover img{}
+.education li:nth-of-type(1) dl:hover img:nth-of-type(2){opacity: 1;}
+.education li:nth-of-type(2) dl:hover img{}
+.education li:nth-of-type(2) dl:hover img:nth-of-type(2){opacity: 1;}
+.education li:nth-of-type(3) dl:hover img{}
+.education li:nth-of-type(3) dl:hover img:nth-of-type(2){opacity: 1;}
+.education li dl:hover dt{color: #333;}
+.education li:nth-of-type(1) dl:hover dd{color: #d7182a;}
+.education li:nth-of-type(2) dl:hover dd{color: #fdaf17;}
+.education li:nth-of-type(3) dl:hover dd{color: #069;}
+
+.education>div:nth-of-type(2){position: absolute; right: 0; top: 57px;}
+.education .more{padding: 15px 0; width: 130px; overflow: hidden; position: relative; font-size: 1rem; line-height: 1; transition: all .5s ease-out; margin-top: 50px;  background: #fff; border-radius: 10px;}
+.education .more:hover{transition: all .8s ease-out; background: #d7182a;}
+    .education .more span{position: relative; z-index: 10; display: block; margin-left: 17px; color: #333;}
+    .education .more:hover span{color: #fff;}
+    .education .more i{position: absolute; left: 50%; top: 16px; margin-left: 35px; font-weight: bold; color: #333;}
+    .education .more:hover i{color: #fff;}
+
+    .text{position: fixed; right:0; top: 0;
+        font-size: 50px; z-index: 10000
+    }

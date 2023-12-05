@@ -1,0 +1,74 @@
+/* 채용절차 본문 */
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 0; top: 18px; margin-left: 330px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 390px;}
+
+.content_area{width: 1200px; margin: 0 auto; padding-top: 100px; height: 1300px;}
+
+.content_area h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; margin-bottom: 100px;}
+
+.procedure{position: relative;}
+.procedure ul{overflow: hidden; margin-top: 100px;}
+.procedure ul li{float: left; width: 240px; height: 260px; background: #fff; text-align: justify; position: relative; overflow: hidden;}
+.procedure ul li::before{content: ""; display: block; width: 340px; height: 350px; box-shadow: 1px 0 5px 5px rgba(0,0,0,.2) inset; position: absolute; left: 0; top: -50px;}
+.procedure li span{font-size: 2.3em; font-weight: 700; color: #ccc; position: absolute; left: 50%; top: 5px; transform: translate(-50%); transition: all .3s ease-out;}
+.procedure li:hover span{opacity: 0;}
+
+.procedure dl{padding-top: 55px; position: relative; height: 165px; overflow: hidden; text-align: center;}
+.procedure dl dt{font-size: 1.125em; font-weight: 700; margin: 80px 70px 0; transition: all .3s ease-out;}
+.procedure li:hover dl dt{margin-top: -10px;}
+.procedure dl dt::after{content: ""; display: block; width: 70px; height: 140px; background: #fdaf17; position: absolute; left: 0; top: 80px; border-radius: 0 120px 120px 0; transition: all .3s ease-out; mix-blend-mode: multiply;}
+.procedure li:hover dt::after{width: 240px; border-radius: 0; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,176,69,1) 66%);}
+.procedure dl dd{margin: 20px 70px 0; position: relative; z-index: 20; opacity: 0; transition: all .3s ease-out; font-weight: 500;}
+.procedure li:hover dl dd{opacity: 1;}
+
+.procedure div{position: relative;}
+.procedure div i{font-size: 50px; background: #fff; display: block; width: 100px; height: 100px; border-radius: 50%; text-align: center; line-height: 100px; position: absolute;  top: -160px;}
+.procedure div i:nth-of-type(1){left: -50px;}
+.procedure div i:nth-of-type(2){left: 190px;}
+.procedure div i:nth-of-type(3){left: 430px;}
+.procedure div i:nth-of-type(4){left: 670px;}
+.procedure div i:last-of-type{left: 910px;}
+.procedure>p{margin-top: 50px; overflow: hidden;}
+.procedure>p span::before{content: ""; display: block; width: 10px; height: 20px; background: #d7182a; margin-right: 10px; float: left;}
+
+
+.introduction{width: 2000px; height: 808px; position: relative; left: 50%; top: 100px; margin-left: -1000px;}
+.introduction>ul{width:1200px; margin: 0 auto; position: relative; height: 400px;}
+.introduction>ul li{width: 1000px; height: 57px; margin: 0 auto;}
+.introduction>ul dt{font-size: 1.125em; margin-left: 700px; display: block; text-align: center; height: 57px;}
+.introduction>ul dt a{display: inline-block; height: 57px; width: 300px;}
+.introduction>ul li:hover dt{font-weight: 700;}
+.introduction>ul li:hover dt span{color: #d7182a;}
+.introduction>ul dt span{position:relative; top: 16px;}
+.introduction>ul dt::after{content: ""; display: block; width: 400px; height: 1px; background: #ccc; margin: 32px 0 0 -100px; position: relative; top: -31px;}
+.introduction>ul li:first-of-type dt::after{margin-top: 30px;}
+.introduction>ul li:nth-of-type(6) dt::after{margin-top: 33px;}
+.introduction>ul li:nth-of-type(7) dt::after{display: none;}
+.introduction>ul li:first-of-type dd{opacity: 1; height: 400px;}
+.introduction>ul li dd{opacity: 1; overflow: hidden; height: 0; position: absolute; left: 100px; top: 0px;}
+.introduction>ul li:hover dd{opacity: 1; height: 400px;}
+.introduction>ul li div{position: absolute; left: 0; top: 0; z-index: 30; width: 601px; height: 58px; text-align: center;  transform: rotateX(270deg); perspective: 1000px; transition: all .3s ease-out;}
+.introduction>ul li:hover div{opacity: 1; background: rgba(0,0,0,.7); color: #fff;  transform: rotateX(360deg);}
+.introduction>ul li div p{text-align: center; display: inline-block; margin: 18px 2px 0;}
+.introduction>ul li:nth-of-type(2) div{top: 56px;}
+.introduction>ul li:nth-of-type(3) div{top: 114px;}
+.introduction>ul li:nth-of-type(4) div{top: 172px;}
+.introduction>ul li:nth-of-type(5) div{top: 230px;}
+.introduction>ul li:nth-of-type(6) div{top: 288px;}
+.introduction>ul li:nth-of-type(7) div{top: 343px;}
+.modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+.introduction .popup li{position: fixed; top: 14%; left: 50%; transform: translate(-50%); 
+    width: 600px; height: 800px; background: #fff;
+    z-index: 60; overflow: scroll; overflow-x: hidden; display: none; padding: 50px 50px; box-sizing: border-box; 
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none;}
+    .introduction .popup li::-webkit-scrollbar {
+        display: none;}
+.introduction .popup .close_btn{background: #fff; width: 60px; height: 60px; line-height: 60px; text-align: center; position: absolute; right: 0; top: 0; font-size: 1.5em;}
+.introduction .pop>span{font-size: 3em; font-weight: 700; color: #ccc;}
+.introduction .pop dl{margin-top: 50px;}
+.introduction .pop dt{margin-bottom: 10px; font-weight: 500; font-size: 1.2em;}
+.introduction .pop dd{margin-bottom: 50px; background: #eff0f3; padding: 20px; border-radius: 10px;}
+.introduction .pop:nth-of-type(5) dd:nth-of-type(2){margin-bottom: 20px;}
+.introduction .pop:nth-of-type(5) dd span{font-weight: 500;}

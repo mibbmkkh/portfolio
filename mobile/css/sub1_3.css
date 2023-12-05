@@ -1,0 +1,24 @@
+#content .titleArea p::before{content: ""; display: block; width: 270px; height: 12px; background: #fff77d; transform: skewX(-30deg) translate(-50%); position: absolute; left: 50%; top: 10px; z-index: -10;}
+.contentArea .history{width: 100%; position: relative;}
+
+.tabs {position:relative; width:100%;} 
+.tabs a.tab {width:33.33%; padding: 10px 0; position:absolute; text-align: center;
+    background: #fff; transition: all .5s; border: 1px solid #ccc; box-sizing: border-box; border-left: none; border-right: none; z-index: 10;}
+.tabs a.tab1{left:0; top:0;}
+.tabs a.tab2{left:50%; top:0; transform: translate(-50%);}
+.tabs a.tab3{right: 0; top:0}
+
+.tabs .contlist{display: none;
+    line-height:1.5em; padding: 90px 0 50px; margin-top: 50px;}
+
+.history .contlist>div{overflow: hidden; padding-top: 20px;}
+.history .contlist>div:first-of-type{padding-top: 0;}
+.history .contlist>div span{font-size: 1.786em; font-weight: 700; width: 33.33%; text-align: center; color: #fdaf17; float: left;}
+.history .contlist>div dl{margin: 0 5% 0 33.33%; padding-bottom: 20px; border-bottom: 1px solid #ccc;}
+.history .contlist>div:last-of-type dl{border-bottom: 0; padding-bottom: 0;}
+.history .contlist>div dl dt{font-weight: 500; color: #d7182a; margin: 20px 0 5px;}
+.history .contlist>div dl dt:first-of-type{margin-top: 0;}
+.history .contlist>div dl dd{color: #666;}
+
+.history .plus{width: 100%; margin-top: 5px;}
+.history .plus img{width: 100%; border-radius: 15px;}

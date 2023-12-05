@@ -1,0 +1,7 @@
+/* 채용절차 본문 */
+#content .title_area p::before{content: ""; display: block; width: 0; height: 20px; background: #fff77d; position: absolute; left: 0; top: 18px; margin-left: 330px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .title_area p::before{width: 390px;}
+
+.content_area{width: 1200px; margin: 0 auto; padding-top: 100px;}
+
+.content_area h3{font-size: 2.5em; font-weight: 700; color: #069; text-align: center; margin-bottom: 100px;}
